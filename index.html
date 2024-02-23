@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="main-title">Gerador de Senha</header>
+    <div class="container">
+        <div class="mini-container-1">
+            <span>Número de caracteres</span>
+            <input type="number" name='number' placeholder="6 - 32" id="characters-number">
+        </div>
+        
+        <div class="mini-container-2">
+            <span class="symbol-text">Simbolos</span>
+            <input type="checkbox" name="symbols" id="include-symbols">
+            <span class="number-text">Números</span>
+            <input type="checkbox" name="numbers" id="include-numbers">
+            <span class="upper-text">Letras Maiúsculas</span>
+            <input type="checkbox" name="letters" id="include-upper-letters">
+            <span class="lower-text">Letras Minúsculas</span>
+            <input type="checkbox" name="letters" id="include-lower-letters">    
+        </div>
+
+        <input type="button" name="button" id="generate-btn" value="Gerar Senha">
+        <br><span id="passwd-msg"></span>
+        <span id="result"></span>
+    </div>
+    <footer><strong>Ricardo Figueiredo</strong> | Todos os direitos reservados &copy; 2024</footer>
+</body>
+</html>
